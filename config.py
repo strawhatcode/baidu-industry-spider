@@ -1,3 +1,4 @@
+# user-agent，每次都随机选择一个ua作为请求头来发送请求
 USERAGENT = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
@@ -7,9 +8,16 @@ USERAGENT = [
 ]
 
 CONFIG = {
+    # 行业id
     'themeid': 84,
+    # 开始时间
     'startdate': '20160101',
+    # 终止时间
     'enddate': '20190914',
+    # 按几天为一个时间范围
     'dateinterval': 7,
-    'pagesize': 30
+    # 每页显示多少条数据
+    'pagesize': 30,
+    # 最终数据保存为csv的路径
+    'save_csv_path': 'baidu_lvyou2.csv'
 }

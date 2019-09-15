@@ -8,7 +8,7 @@ if __name__ == '__main__':
     begin_time = time.time()
     d = BaiduSpider(CONFIG['themeid'], CONFIG['startdate'], CONFIG['enddate'], CONFIG['dateinterval'])
     count = 0
-    with open('baidu_lvyou2.csv', 'w', encoding='utf-8', newline='') as f:
+    with open(CONFIG['save_csv_path'], 'w', encoding='utf-8', newline='') as f:
         csv_f = csv.writer(f)
         csv_f.writerow(['name', 'value', 'date'])
         for datas in d.get_respones(CONFIG['pagesize']):
