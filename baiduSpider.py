@@ -70,6 +70,7 @@ class BaiduSpider:
     def date_split(self, startdate, enddate, dateinterval):
         startdate = datetime.datetime.strptime(startdate, '%Y%m%d')
         enddate = datetime.datetime.strptime(enddate, '%Y%m%d')
+        enddate = enddate + datetime.timedelta(days=1)
         total_days = (enddate - startdate).days + 1
         if total_days % dateinterval == 0:
             loop_count = total_days // dateinterval
