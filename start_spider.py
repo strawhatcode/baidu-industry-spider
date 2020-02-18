@@ -1,8 +1,8 @@
 import csv
 import time
 
-from baidu_theme_spider.baiduSpider import BaiduSpider
-from baidu_theme_spider.config import CONFIG
+from baiduSpider import BaiduSpider
+from config import CONFIG
 
 if __name__ == '__main__':
     begin_time = time.time()

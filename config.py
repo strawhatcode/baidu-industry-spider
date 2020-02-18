@@ -9,15 +9,15 @@ USERAGENT = [
 
 CONFIG = {
     # 行业id
-    'themeid': 84,
+    'themeid': 12,
     # 开始时间
-    'startdate': '20160101',
+    'startdate': '20191213',
     # 终止时间
-    'enddate': '20190914',
+    'enddate': '20191231',
     # 按几天为一个时间范围
-    'dateinterval': 7,
+    'dateinterval': 1,
     # 每页显示多少条数据
     'pagesize': 30,
     # 最终数据保存为csv的路径
-    'save_csv_path': 'baidu_lvyou2.csv'
+    'save_csv_path': 'baidu_phone2.csv'
 }

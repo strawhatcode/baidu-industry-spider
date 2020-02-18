@@ -4,7 +4,7 @@ import time
 import datetime
 import requests
 import random
-from .config import USERAGENT
+from config import USERAGENT
 
 
 class BaiduSpider:
